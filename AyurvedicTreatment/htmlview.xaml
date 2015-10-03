@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="AyurvedicTreatment.htmlview"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AyurvedicTreatment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="#6b4a2c" Margin="0,0.333,0,-0.333">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+        </Grid>
+        <WebView Name ="web1" HorizontalAlignment="Left" Height="545" Margin="0,95,0,0" VerticalAlignment="Top" Width="400" Loaded="WebView_Loaded" LoadCompleted="WebView_LoadCompleted" Grid.Row="1"/>
+        <TextBlock Text="Ayurvedic Treatments" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="58" Grid.RowSpan="2" Margin="11,32,0,0" Foreground="#FF0C0A0A" FontFamily="Aharoni" RenderTransformOrigin="0.497,0.599"/>
+    </Grid>
+</Page>

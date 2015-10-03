@@ -1,0 +1,230 @@
+﻿<Page
+    x:Class="AyurvedicTreatment.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AyurvedicTreatment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="OldLace">
+        <StackPanel >
+            <TextBlock Text="   AyurvedicTreatments" Height="77"   FontSize="38" FontFamily="Arohi" Foreground="Black"/>
+        </StackPanel>
+
+        <ListBox  x:Name="TreatmentListBx" Margin="0,67,0,0" SelectedItem="{Binding }" Background="OldLace"  SelectionChanged="lbSelectionChanged">
+
+            <ListBoxItem >
+
+                <StackPanel  Orientation="Horizontal" Height="72"  >
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/avalambitaka.jpg" Height="103" Width="99" Margin="0,0,0,-31"/>
+                    <TextBlock x:Name="TxtBx" Text="   Gandhoosham" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" SelectionChanged="TxtBx_SelectionChanged" Margin="0,16,0,-49.333"  >
+                    </TextBlock>
+                    <StackPanel Width="100"/>
+                </StackPanel>
+            </ListBoxItem >
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/bhramara.jpg" Height="99" Width="99" Margin="0,0,0,-27"/>
+                    <TextBlock x:Name="TxtBx1" Text="   Thailadhara" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,15,0,-48.333" SelectionChanged="TxtBx1_SelectionChanged">
+
+                    </TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/dhenukaIcon.png" Width="100" Margin="0,0,0,-0.333"/>
+                    <TextBlock x:Name="TxtBx2" Text="   Netratharpanam" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,11,0,-44.333" SelectionChanged="TxtBx2_SelectionChanged"/>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/dolaIcon.png" Height="96" Width="98"/>
+                    <TextBlock Text="   Kateevasthi" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,16,0,-49.333"/>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/DolitaIcon.png" Height="97" Width="98"/>
+                    <TextBlock Text="   Lepam" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,13,0,-46.333"/>
+                    <StackPanel Width="100"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/hiranaIcon.png" Height="98" Width="98"/>
+                    <TextBlock Text="   Njavarakizhi" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,19,0,-52.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/KshudgagaIcon.png" Height="98" Width="98"/>
+                    <TextBlock Text="   Thakradhara" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,12,0,-45.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/lilasanaIcon.png" Height="98" Width="98" />
+                    <TextBlock Text="   Snehapanam" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,12,0,-45.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/marjaraIcon.png" Height="103" Width="98"/>
+                    <TextBlock Text="   Sirodhara" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,12,0,-45.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/PadmaIcon.png" Height="99" Width="98"/>
+                    <TextBlock Text="  " FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/ratipashaIcon.png" Height="101" Width="98"/>
+                    <TextBlock Text="   Thalapothichil" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,15,0,-48.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/ratisundaraIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="   Vasthi" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,18,0,-51.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/samdamshaIcon.png" Height="96" Width="98"/>
+                    <TextBlock Text="   Abhyangam" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,18,0,-51.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/sthitaIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="   Dhoomapanam" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,18,0,-51.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/svanakaIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="   Netradhara" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,15,0,-48.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/tripadamIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="   Nasyam" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,12,0,-45.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/uthkantaIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="   Vamanam" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,15,0,-48.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/vadavakaIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="   Siropichu" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,12,0,-45.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/virshaIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="   Sirovasthi" FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101" Margin="0,12,0,-45.333"/>
+                </StackPanel>
+            </ListBoxItem>
+
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal"  Height="72">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="Background/rowBackground.png"/>
+                    </StackPanel.Background>
+                    <Image Source="NewFolder1/vyomapadaIcon.png" Height="84" Width="98"/>
+                    <TextBlock Text="  " FontSize="32" Height="105" Width="363" FontFamily="Aharoni" Foreground="#FF0C0101"/>
+                </StackPanel>
+            </ListBoxItem>
+
+
+        </ListBox>
+
+    </Grid>
+</Page>
