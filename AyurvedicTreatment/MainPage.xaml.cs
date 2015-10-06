@@ -44,20 +44,7 @@ namespace AyurvedicTreatment
         }
 
 
-        private void TxtBx_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-         //   Frame.Navigate(typeof(htmlview));
-        }
-
-        private void TxtBx1_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-          //  this.Frame.Navigate(typeof(htmlview),null);
-        }
-
-        private void TxtBx2_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
 
         private void lbSelectionChanged(object sender, SelectionChangedEventArgs e)
         {

@@ -201,15 +201,8 @@ namespace AyurvedicTreatment
                     }
                     break;
 
+              
                case 9:
-                    {
-                        Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Njavarakizhi.html");
-                        LocalUriResolver resolver = new LocalUriResolver();
-                        web1.NavigateToLocalStreamUri(uri, resolver);
-                    }
-                    break;
-
-               case 10:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Thalapothichil.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -217,7 +210,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 11:
+               case 10:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Vasthi.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -225,7 +218,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 12:
+               case 11:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Abhyangam.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -233,7 +226,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 13:
+               case 12:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Dhoomapanam.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -241,7 +234,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 14:
+               case 13:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Netradhara.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -249,7 +242,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 15:
+               case 14:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Nasyam.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -257,7 +250,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 16:
+               case 15:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Vamanam.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -265,7 +258,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 17:
+               case 16:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Siropichu.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -273,7 +266,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 18:
+               case 17:
                     {
                         Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Sirovasthi.html");
                         LocalUriResolver resolver = new LocalUriResolver();
@@ -281,14 +274,7 @@ namespace AyurvedicTreatment
                     }
                     break;
 
-               case 19:
-                    {
-                        Uri uri = web1.BuildLocalStreamUri("LocalData", "Html/Njavarakizhi.html");
-                        LocalUriResolver resolver = new LocalUriResolver();
-                        web1.NavigateToLocalStreamUri(uri, resolver);
-                    }
-                    break;
-                                                                                       
+                                                                           
                                                    
 
                 default:
